@@ -3,9 +3,11 @@
 {
 	"name": "Gleam DevContainer",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "ghcr.io/gleam-lang/gleam:v1.5.0-erlang"
+	"image": "ghcr.io/gleam-lang/gleam:v1.5.0-erlang",
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"ghcr.io/nils-geistmann/devcontainers-features/exercism:0": {}
+	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
